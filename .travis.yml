@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+- stable
+cache:
+  directories:
+  - node_modules
+jobs:
+  include:
+  - name: Unit Tests
+    stage: Testing/Static Analysis
+    script: 
+      - npm run test:unit -- --forceExit --silent --testTimeout=10000 --maxWorkers=4
+    after_script:
+      - cat ./coverage/lcov.info | coveralls
+  - name: Linting
+    stage: Testing/Static Analysis
+    script: npm run lint
+stages:
+- Testing/Static Analysis
