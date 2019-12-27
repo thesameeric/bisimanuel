@@ -20,6 +20,7 @@ jobs:
     stage: Deployment
     script: npm run build
     deploy:
+      local_dir: dist
       on: master
       provider: heroku
       api_key:
