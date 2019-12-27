@@ -4,7 +4,7 @@
       <p class="menuTrigger">
         <i class="far fa-bars"></i>
       </p>
-      <p class="text-20 mar-lr-20"><strong>LOGO</strong></p>
+      <p class="text-20 mar-lr-20"><strong>{{name}}</strong></p>
     </div>
   </header>
 </template>
@@ -17,6 +17,7 @@ header{
 </style>
 <script>
 export default {
+  props: ['name'],
   mounted() {
     this.openSideBar();
   },
