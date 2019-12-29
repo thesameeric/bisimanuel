@@ -19,10 +19,12 @@ jobs:
     if: branch = master
     stage: Deployment
     script: npm run build
+    before_deploy:
+      - cd dist
     deploy:
-      local_dir: dist
       on: master
       provider: heroku
+      skip_cleanup: true
       api_key:
         secure: LEzjn4IzI3iGD1hVhznUUOZZL8i/MVi52j63cWWVopxnR6HwaLiN1Xonuzk9urq4f2307FiJA4/Y14XpNgqSdO9NhDyQIcmnWNPjzChDMPuXPbp3ehX4plv95JyQeWjoGU/8may8bsgrRLeFEp0EPR6geO3h3v3hrQSrpRxLpgpmPCWjX5sKaQW8qhThypxTv1qkGpP6qcnQ7FNvoHy3H0UTfloxZPohDrMJYh+VhZvRDTRrRF32QVrurbIjMOTdMSRbJzP2Tm5yJLHtrZJHLFA+rpOFHnXF4T2n0BsIj0v5R5QzwsF9gLaXjjA9Q5p1XzFpdVbqbZeF2glQaR02ScQ9Wk7kcM6CaO+sLCebr/5Pk5acEm5B6BSvc5DW7uvHbcCR+/zBXLoT0f/hT5uV8HmZ+evjYIhSuqnxcqKo6hZ5IL9jqy8JzXtPhQ+5BYO0lgjxjvZO3YJhRHJ13sB9ZYPYOKUgrYJ5nuR5JnUuvsoFi32WS4/kHwL1AcioIg1GocLHCe2bBXKSm/KTO8kfZ3Tc0qkD4yEovc6ehSQ/w9I5Fc3D+eTt+aIq62fpF6B7AMpYE2nYCqSTJvid3eNngmfQo7tv0tal8oMEO6PpY1dG9fleTW8fexQNsD5v5s3gFM7/cXMrTiqvR2oJe40szLyTZCwUqcsxd3svIlzyShE=
       app: bisimanuel
