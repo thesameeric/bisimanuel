@@ -19,8 +19,6 @@ jobs:
     if: branch = master
     stage: Deployment
     script: npm run build
-    before_deploy:
-      - cd dist
     deploy:
       on: master
       provider: heroku
