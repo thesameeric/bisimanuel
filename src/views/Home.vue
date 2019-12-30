@@ -7,7 +7,7 @@
       </span>
     </section>
     <section class="flex column nowrap pad-common">
-      <p>Trending</p>
+      <p class="trending">Hear what's trending</p>
       <ul class="timeline">
         <li class="flex nowrap align-items-center justify-content-space-between">
           <div class="flex nowrap align-items-center">
@@ -94,6 +94,10 @@
       font-size: 50px;
     }
   }
+}
+.trending {
+  font-size:20px;
+  margin: 20px 0;
 }
 .cover-art-holder {
   margin: 10px 20px;
