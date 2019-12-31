@@ -6,53 +6,93 @@
         <a class="btn btn-white" href="#">explore</a>
       </span>
     </section>
-    <section class="flex column nowrap pad-common">
+    <section class="flex align-items-center column nowrap pad-common">
       <p class="trending">Hear what's trending</p>
-      <ul class="timeline">
-        <li class="flex nowrap align-items-center justify-content-space-between">
-          <div class="flex nowrap align-items-center">
+      <ul class="flex flex-wrap justify-content-center col-lg-6 timeline">
+        <li class="music-holder">
+          <div class="music-holder-div">
             <div class="cover-art-holder">
               <img src="../assets/img/drake.jpg" alt="Cover art">
             </div>
-            <div class="flex column nowrap">
+            <div class="flex column nowrap music-info-text">
               <p>God's plan</p>
               <p class="text-13 artist-name">Drake 2018</p>
+              <p class="text-13 download-count">12,255</p>
             </div>
           </div>
-          <div class="music-time-holder" >
-            <p>3:35</p>
+          <div class="flex">
+            <p class="text-13 download-count timeframe align-self-end">3:55</p>
           </div>
         </li>
-        <li class="flex nowrap align-items-center justify-content-space-between">
-          <div class="flex nowrap align-items-center">
+        <li class="music-holder">
+          <div class="music-holder-div">
             <div class="cover-art-holder">
               <img src="../assets/img/drake.jpg" alt="Cover art">
             </div>
-            <div class="flex column nowrap">
+            <div class="flex column nowrap music-info-text">
               <p>God's plan</p>
               <p class="text-13 artist-name">Drake 2018</p>
+              <p class="text-13 download-count">12,255</p>
             </div>
           </div>
-          <div class="music-time-holder" >
-            <p>3:35</p>
+          <div class="flex">
+            <p class="text-13 download-count timeframe align-self-end">3:55</p>
           </div>
         </li>
+        <li class="music-holder">
+          <div class="music-holder-div">
+            <div class="cover-art-holder">
+              <img src="../assets/img/drake.jpg" alt="Cover art">
+            </div>
+            <div class="flex column nowrap music-info-text">
+              <p>God's plan</p>
+              <p class="text-13 artist-name">Drake 2018</p>
+              <p class="text-13 download-count">12,255</p>
+            </div>
+          </div>
+          <div class="flex">
+            <p class="text-13 download-count timeframe align-self-end">3:55</p>
+          </div>
+        </li>
+        <li class="music-holder">
+          <div class="music-holder-div">
+            <div class="cover-art-holder">
+              <img src="../assets/img/drake.jpg" alt="Cover art">
+            </div>
+            <div class="flex column nowrap music-info-text">
+              <p>God's plan</p>
+              <p class="text-13 artist-name">Drake 2018</p>
+              <p class="text-13 download-count">12,255</p>
+            </div>
+          </div>
+          <div class="flex">
+            <p class="text-13 download-count timeframe align-self-end">3:55</p>
+          </div>
+        </li>
+        <li class="music-holder">
+          <div class="music-holder-div">
+            <div class="cover-art-holder">
+              <img src="../assets/img/drake.jpg" alt="Cover art">
+            </div>
+            <div class="flex column nowrap music-info-text">
+              <p>God's plan</p>
+              <p class="text-13 artist-name">Drake 2018</p>
+              <p class="text-13 download-count">12,255</p>
+            </div>
+          </div>
+          <div class="flex">
+            <p class="text-13 download-count timeframe align-self-end">3:55</p>
+          </div>
+        </li>
+      </ul>
+      <p class="flex">
+        <a class="btn-coloured" href="">Explore trending playlist</a>
+      </p>
+
+      <p class="trending">Thanks for listening. Now join in.</p>
+      <ol class="events">
         <li>
-          <div>
-            <iframe class="youtube-iframe" src="https://www.youtube.com/embed/xpVfcZ0ZcFM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="video-player-info flex nowrap justify-content-space-between">
-            <span class="flex column nowrap">
-              <p>Don't call me back</p>
-              <p class="text-13 artist-name">Joeboy. DML</p>
-            </span>
-            <p>Download audio</p>
-          </div>
-        </li>
-        <li class="event">
-          <div class="event-img-holder">
-            <img src="../assets/img/concert.jpg" alt="concert cover art">
-          </div>
+          <img src="../assets/img/concert.jpg" alt="">
           <div class="event-info flex nowrap justify-content-space-between">
             <span>
               <p class="text-20"><strong>Partee after Partee</strong></p>
@@ -73,7 +113,7 @@
             </span>
           </div>
         </li>
-      </ul>
+      </ol>
     </section>
   </div>
 </template>
@@ -99,37 +139,14 @@
   font-size:20px;
   margin: 20px 0;
 }
-.cover-art-holder {
-  margin: 10px 20px;
-  img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-  }
-}
-.artist-name {
-  color: #a1a1a1;
-}
-ul.timeline {
-  width: 500px;
-  .music-time-holder {
-    margin-right: 20px;
-    color: #a1a1a1;
-  }
-  li {
-    border-bottom: 1px solid #dbdbdb;
-    padding-bottom: 15px;
-  }
-  .youtube-iframe {
-    width: 100%;
-    height: 250px;
-  }
-  li.event {
-    .event-img-holder {
-      img{
-        width: 100%;
-        height: 280px;
-      }
+ol.events {
+  li{
+    img {
+      width: 500px;
+      height: 320px;
+        @media only screen and (max-width: 720px) {
+          width: 100%;
+        }
     }
     .event-info {
       padding: 10px 20px;
@@ -138,17 +155,79 @@ ul.timeline {
       }
     }
   }
-  @media only screen and (max-width: 720px) {
-    width: 100%;
+}
+ul.timeline {
+  li {
+    display: flex;
+    flex-flow: column nowrap;
+    .music-holder-div {
+      display: flex;
+      flex-flow: column nowrap;
+      padding-bottom: 15px;
+      margin: 7px 20px;
+    }
+    .cover-art-holder {
+      margin: 10px 0;
+      img {
+        width: 200px;
+        height: 170px;
+        border-radius: 0px;
+        @media only screen and (max-width: 720px) {
+          width: 70px;
+          height: 70px;
+          margin-left: 15px;
+          border-radius: 0px;
+        }
+      }
+      @media only screen and (max-width: 720px) {
+        margin: 0;
+      }
+    }
+    .artist-name {
+      color: #a1a1a1;
+    }
+    .download-count {
+      margin-top: 8px;
+      color: #a1a1a1;
+    }
+    @media only screen and (max-width: 720px) {
+      width: 100%;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #ebe9e9;
+      .music-holder-div {
+        flex-flow: row nowrap;
+        align-items: center;
+        width: 100%;
+        margin: 5px;
+        padding-bottom: 5px;
+        padding-top: 10px;
+      }
+      .music-info-text {
+        margin-left: 20px;
+      }
+    }
+  }
+  li:last-child {
+    border-bottom: none;
   }
 }
-.video-player-info {
-  padding: 5px 20px;
+.block-btn {
+  display: flex;
+  padding: 12px 27px;
+  margin: 20px 0;
+  background: #1f1f1f;
+  color: #FFF;
+  border-radius: 5px;
 }
-ul.timeline li:last-child {
-  border-bottom: none;
+.timeframe {
+  padding-right: 20px;
+  display: none;
+  @media only screen and (max-width: 720px) {
+    display: flex;
+  }
 }
-
 </style>
 <script>
 export default {

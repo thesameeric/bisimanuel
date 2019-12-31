@@ -317,9 +317,9 @@ b, .strong {
   align-items: center;
   justify-content: center;
   width: auto;
-  background: #FFF;
-  color: #303030;
-  border-radius: 20px;
+  border: 1px solid #FFF;
+  color: #FFF;
+  border-radius: 3px;
   font-size: 20px;
 }
 .btn-coloured {
@@ -329,8 +329,8 @@ b, .strong {
   align-items: center;
   justify-content: center;
   width: auto;
-  background: #252525;  /* fallback for old browsers */
-  color: #FFF;
+  border: 1px solid #242424;
+  color: #242424;
   border-radius: 3px;
 }
 @media only screen and (max-width: 720px) {
