@@ -343,4 +343,7 @@ b, .strong {
   .pad-common {
     padding: 5px 0px;
   }
+  .pad-mob-15 {
+    padding: 15px;
+  }
 }
