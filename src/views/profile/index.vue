@@ -47,10 +47,13 @@
   }
   .edit-profile-btn {
     margin: 12px;
+    font-size: 13px;
+    font-weight: 500;
     padding: 9px 20px;
-    background: #322885;
-    border-radius: 3px;
+    background: #1db954;
     color: #ffffff;
+    text-transform: capitalize;
+    text-align: center;
   }
   ol.account-info {
     li {

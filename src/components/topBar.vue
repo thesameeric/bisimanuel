@@ -15,7 +15,7 @@
     padding: 9px 20px;
     font-weight: 700;
     font-size: 20px;
-    color: #322885;
+    color: #1db954;
   }
   .person-icon {
     background: #5e5e5e;
